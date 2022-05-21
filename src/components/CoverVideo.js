@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import MainVideo from "../assets/video6.mp4";
+import { motion } from "framer-motion";
 
 // Style section ///
 const VideoContainer = styled.section`
@@ -22,7 +23,7 @@ const DarkOverlay = styled.div`
   z-index: 1;
   background-color: ${(props) => `rgba(${props.theme.bodyRgba},0.6)`};
 `;
-const Title = styled.div`
+const Title = styled(motion.div)`
   position: absolute;
   top: 0;
   bottom: 0;
@@ -52,30 +53,50 @@ const Title = styled.div`
   }
 `;
 
+const container = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      delayChildren: 2,
+      staggerChildren: 0.3,
+    },
+  },
+};
+const item = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+  },
+};
 const CoverVideo = () => {
   return (
     <VideoContainer>
       <DarkOverlay />
-      <Title>
+      <Title variants={container} initial="hidden" animate="show">
         <div>
-          <h1 data-scroll data-scroll-delay="0.24" data-scroll-speed="4">
+          <motion.h1 variants={item} data-scroll data-scroll-delay="0.24" data-scroll-speed="4">
             A
-          </h1>
-          <h1 data-scroll data-scroll-delay="0.18" data-scroll-speed="4">
+          </motion.h1>
+          <motion.h1 variants={item} data-scroll data-scroll-delay="0.18" data-scroll-speed="4">
             c
-          </h1>
-          <h1 data-scroll data-scroll-delay="0.13" data-scroll-speed="4">
+          </motion.h1>
+          <motion.h1 variants={item} data-scroll data-scroll-delay="0.13" data-scroll-speed="4">
             t
-          </h1>
-          <h1 data-scroll data-scroll-delay="0.09" data-scroll-speed="4">
+          </motion.h1>
+          <motion.h1 variants={item} data-scroll data-scroll-delay="0.09" data-scroll-speed="4">
             o
-          </h1>
-          <h1 data-scroll data-scroll-delay="0.06" data-scroll-speed="4">
+          </motion.h1>
+          <motion.h1 variants={item} data-scroll data-scroll-delay="0.06" data-scroll-speed="4">
             r
-          </h1>
-          <h1 data-scroll data-scroll-delay="0.04" data-scroll-speed="4">
+          </motion.h1>
+          <motion.h1 variants={item} data-scroll data-scroll-delay="0.04" data-scroll-speed="4">
             s
-          </h1>
+          </motion.h1>
         </div>
         <h2 data-scroll data-scroll-delay="0.04" data-scroll-speed="2">
           Inspire, Create, Belive
