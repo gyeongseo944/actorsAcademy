@@ -1,6 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 import "@fontsource/sirin-stencil";
 import "@fontsource/kaushan-script";
+import "@fontsource/bangers";
+import "@fontsource/ma-shan-zheng";
+import "@fontsource/merienda";
+import "@fontsource/niconne";
 
 const GlobalStyles = createGlobalStyle`
 *,*::before,*::after{
