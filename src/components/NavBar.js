@@ -89,10 +89,18 @@ const NavBar = () => {
         >
           MENU
         </MenuBtn>
-        <MenuItem>HOME</MenuItem>
-        <MenuItem>HOME</MenuItem>
-        <MenuItem>HOME</MenuItem>
-        <MenuItem>HOME</MenuItem>
+        <MenuItem whileHover={{ scale: 1.1, y: -5 }} whileTap={{ scale: 0.9, y: 0 }}>
+          HOME
+        </MenuItem>
+        <MenuItem whileHover={{ scale: 1.1, y: -5 }} whileTap={{ scale: 0.9, y: 0 }}>
+          HOME
+        </MenuItem>
+        <MenuItem whileHover={{ scale: 1.1, y: -5 }} whileTap={{ scale: 0.9, y: 0 }}>
+          HOME
+        </MenuItem>
+        <MenuItem whileHover={{ scale: 1.1, y: -5 }} whileTap={{ scale: 0.9, y: 0 }}>
+          HOME
+        </MenuItem>
       </MenuItems>
     </NavContainer>
   );

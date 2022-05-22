@@ -3,10 +3,12 @@ import GlobalStyles from "./styles/GlobalStyles";
 import { dark } from "./styles/Themes";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useRef } from "react";
+import { AnimatePresence } from "framer-motion";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 
 import Home from "./sections/Home";
-import { AnimatePresence } from "framer-motion";
+import AboutUs from "./sections/AboutUs";
+import Teachers from "./sections/Teachers";
 
 function App() {
   const containerRef = useRef(null);
@@ -18,6 +20,8 @@ function App() {
           <AnimatePresence>
             <main data-scroll-container ref={containerRef}>
               <Home />
+              <AboutUs />
+              <Teachers />
             </main>
           </AnimatePresence>
         </LocomotiveScrollProvider>
