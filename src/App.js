@@ -10,6 +10,9 @@ import Home from "./sections/Home";
 import AboutUs from "./sections/AboutUs";
 import Teachers from "./sections/Teachers";
 import ScrollTriggerProxy from "./components/ScrollTriggerProxy";
+import Banner from "./sections/Banner";
+import Curriculum from "./sections/Curriculum";
+import Footer from "./sections/Footer";
 
 function App() {
   const containerRef = useRef(null);
@@ -24,6 +27,9 @@ function App() {
               <Home />
               <AboutUs />
               <Teachers />
+              <Banner />
+              <Curriculum />
+              <Footer />
             </main>
           </AnimatePresence>
         </LocomotiveScrollProvider>
