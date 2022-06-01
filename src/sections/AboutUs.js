@@ -55,7 +55,7 @@ const Right = styled.div`
 `;
 const AboutUs = () => {
   return (
-    <Section id="fixed_target">
+    <Section id="fixed_target" className="aboutUs">
       <Title data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">
         About Us
       </Title>

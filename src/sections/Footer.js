@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { useLocomotiveScroll } from "react-locomotive-scroll";
 import styled from "styled-components";
 
 import Logo from "../assets/Svgs/star_white_48dp.svg";
@@ -71,9 +72,22 @@ const Bottom = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  a {
+    text-decoration: underline;
+  }
 `;
 
 const Footer = () => {
+  const { scroll } = useLocomotiveScroll();
+  const handleScroll = (id) => {
+    let elem = document.querySelector(id);
+    scroll.scrollTo(elem, {
+      offset: "-100",
+      duration: "2000",
+      easing: [0.25, 0.0, 0.35, 1.0],
+    });
+  };
+
   return (
     <Section>
       <LogoContainer>
@@ -91,11 +105,10 @@ const Footer = () => {
         }}
       >
         <ul>
-          <li>HOME</li>
-          <li>HOME</li>
-          <li>HOME</li>
-          <li>HOME</li>
-          <li>HOME</li>
+          <li onClick={() => handleScroll("#home")}>HOME</li>
+          <li onClick={() => handleScroll(".aboutUs")}>About Us</li>
+          <li onClick={() => handleScroll("#teachers")}>Teachers</li>
+          <li onClick={() => handleScroll("#curriculum")}>Curriculum</li>
         </ul>
       </FooterContainer>
       <Bottom>
@@ -103,7 +116,9 @@ const Footer = () => {
           &copy; {new Date().getFullYear()}. All Rights Reserved.
         </span>
         <span data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">
-          Created by Gyeongseo referring to CodeBucks
+          Photos by <a href="https://unsplash.com/">Unsplash</a>
+          <br />
+          Videos by <a href="https://www.pexels.com/ko-kr/">Pexels</a>
         </span>
       </Bottom>
     </Section>

@@ -169,32 +169,34 @@ const Teachers = () => {
   }, []);
 
   return (
-    <Section ref={ref}>
-      <Title data-scroll data-scroll-speed="-1">
-        Our Teachers
-      </Title>
-      <Left>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-          1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          <br />
-          <br />
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-          1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-      </Left>
-      <Right ref={horizontalRef}>
-        <Product img={img8} title="sam" />
-        <Product img={img2} title="sam" />
-        <Product img={img3} title="sam" />
-        <Product img={img4} title="sam" />
-        <Product img={img5} title="sam" />
-        <Product img={img6} title="sam" />
-        <Product img={img7} title="sam" />
-        <Product img={img1} title="sam" />
-      </Right>
-    </Section>
+    <div id="teachers">
+      <Section ref={ref}>
+        <Title data-scroll data-scroll-speed="-1">
+          Our Teachers
+        </Title>
+        <Left>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+            1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            <br />
+            <br />
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+            1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+            including versions of Lorem Ipsum.
+          </p>
+        </Left>
+        <Right ref={horizontalRef}>
+          <Product img={img8} title="sam" />
+          <Product img={img2} title="sam" />
+          <Product img={img3} title="sam" />
+          <Product img={img4} title="sam" />
+          <Product img={img5} title="sam" />
+          <Product img={img6} title="sam" />
+          <Product img={img7} title="sam" />
+          <Product img={img1} title="sam" />
+        </Right>
+      </Section>
+    </div>
   );
 };
 
