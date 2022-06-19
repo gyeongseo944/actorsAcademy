@@ -186,14 +186,14 @@ const Teachers = () => {
           </p>
         </Left>
         <Right ref={horizontalRef}>
-          <Product img={img8} title="sam" />
-          <Product img={img2} title="sam" />
-          <Product img={img3} title="sam" />
-          <Product img={img4} title="sam" />
-          <Product img={img5} title="sam" />
-          <Product img={img6} title="sam" />
-          <Product img={img7} title="sam" />
-          <Product img={img1} title="sam" />
+          <Product img={img8} title="Noah" />
+          <Product img={img2} title="Lisa" />
+          <Product img={img3} title="James" />
+          <Product img={img4} title="Sam" />
+          <Product img={img5} title="Daniel" />
+          <Product img={img6} title="Logan" />
+          <Product img={img7} title="Aiden" />
+          <Product img={img1} title="Samuel" />
         </Right>
       </Section>
     </div>

@@ -3,10 +3,12 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import React, { useLayoutEffect, useRef } from "react";
 import styled from "styled-components";
 
-import img1 from "../assets/Images/t1.jpg";
-import img2 from "../assets/Images/t2.webp";
-import img3 from "../assets/Images/t3.jpg";
-import img4 from "../assets/Images/t4.jpg";
+import img1 from "../assets/Images/c7.jpg";
+import img2 from "../assets/Images/c5.jpg";
+import img3 from "../assets/Images/c8.jpg";
+import img4 from "../assets/Images/c10.jpg";
+import img5 from "../assets/Images/c11.jpg";
+import img6 from "../assets/Images/c3.jpg";
 
 const Section = styled.section`
   min-height: 100vh;
@@ -143,12 +145,12 @@ const Curriculum = () => {
           Our Curriculum
         </Title>
         <Container ref={ScrollingRef}>
-          <Product img={img1} title="sam" />
-          <Product img={img2} title="sam" />
-          <Product img={img3} title="sam" />
-          <Product img={img4} title="sam" />
-          <Product img={img4} title="sam" />
-          <Product img={img4} title="sam" />
+          <Product img={img1} title="Film making" />
+          <Product img={img2} title="Dancing class" />
+          <Product img={img3} title="Theatrical performance" />
+          <Product img={img4} title="Stunt Action class" />
+          <Product img={img5} title="Directing practice" />
+          <Product img={img6} title="Model class" />
         </Container>
         <Text data-scroll data-scroll-speed="-4">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
